@@ -1,0 +1,40 @@
+{
+  "name": "prufer",
+  "version": "0.0.1",
+  "description": "Implements the Prüfer sequence in javascript, for space-efficient representation of trees using  a unique sequence. Useful for generating random trees of data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "browserify -r ./index.js:prufer > prufer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jleppert/prufer.git"
+  },
+  "keywords": [
+    "prufer",
+    "Prüfer",
+    "random",
+    "tree",
+    "generation",
+    "tree",
+    "sequence",
+    "prufer",
+    "sequence",
+    "prüfer",
+    "sequence",
+    "tree",
+    "algorithm"
+  ],
+  "author": "Johnathan Leppert <johnathan.leppert@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jleppert/prufer/issues"
+  },
+  "homepage": "https://github.com/jleppert/prufer",
+  "devDependencies": {
+    "browserify": "^6.3.2",
+    "chai": "^1.10.0",
+    "mocha": "^2.0.1"
+  }
+}

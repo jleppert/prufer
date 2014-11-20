@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>Prüfer Sequence Tree Example</title>
+
+	<script src="vendor/graphing.js"></script>
+	<script src="../prufer.js"></script>
+	<style>
+		body  { margin: 0px;  padding: 0px; }
+		#tree { height: 100%; width: 100%;  }
+	</style>
+	<script>
+	var prufer = require('prufer'),
+		a      = location.search.replace(/^.*?\=/, '');
+
+	if(a.length) {
+		a = a.split(',').map(function(val) { return parseInt(val); });
+	} else {
+		a = [3,3,3,4];
+	}
+	
+	var tree = prufer(a);
+
+	function drawTree(tree) {
+		var g = new Graph();
+  
+  		tree.forEach(function(edge) {
+    		g.addEdge(edge[0].toString(), edge[1].toString());
+  		});
+  
+  		var l = new Graph.Layout.Spring(g);
+  		l.layout();
+  
+  		var renderer = new Graph.Renderer.Raphael('tree', g, window.innerWidth, window.innerHeight);
+  		renderer.draw();
+	}
+	</script>
+</head>
+<body>
+	<div id="tree"></div>
+	<script>drawTree(tree);</script>
+</body>
+</html>
