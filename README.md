@@ -16,6 +16,7 @@ console.log(tree);
 
 Installing
 -------------
+Using with node:
 
     npm install prufer
   
