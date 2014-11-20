@@ -17,7 +17,7 @@ console.log(tree);
 Installing
 -------------
 
-  npm install prufer
+    npm install prufer
   
 For the browser, use `prufer.js`:
 
