@@ -1,7 +1,11 @@
 prüfer
 ======
 
-Implements the Prüfer sequence algorithm in pure javascript, for space-efficient representation of trees using  a unique sequence. Useful for generating random trees of data.
+Implements the Prüfer sequence algorithm in pure javascript, for space-efficient representation of trees using  a unique sequence. Useful for generating random trees of data. 
+
+Here are some examples:
+[3. 3. 3. 4](http://jleppert.github.io/prufer/examples/simple.html)
+[4, 4, 4, 5](http://jleppert.github.io/prufer/examples/simple.html?a=4,4,4,5)
 
 ```js
 var prufer = require('prufer');
