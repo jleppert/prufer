@@ -1,6 +1,8 @@
 prüfer
 ======
 
+![Tree](http://i.imgur.com/KUzEW3h.png)
+
 Implements the Prüfer sequence algorithm in pure javascript, for space-efficient representation of trees using  a unique sequence. Useful for generating random trees of data. 
 
 Here are some examples:
